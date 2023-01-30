@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Login to Instachat</h1>
+    <img id="logo" src="https://i.pinimg.com/originals/d9/cc/e8/d9cce8e37b70ff92d212a1bc7a9137d5.png" />
     <p>Welcome to Instachat</p>
     <p>Please give us as much of your information as possible</p>
 
@@ -15,19 +16,27 @@
         <div>
             <label for="username">
                 Username:
-                <input type="text" name="username" />
+                <input type="text" name="username"  id="username"/>
             </label>
         </div>
 
         <div>
             <label for="password">
                 Password:
-                <input type="password" name="password" />
+                <input type="password" name="password" id="password"/>
             </label>
         </div>
-        
-        <button>Login</button>
-        
+
+        <div id="hints">
+            Welcome to Instachat
+        </div>
+
+        <button onclick="reset();">Reset password</button>
+        <button onclick="createUser();">Create an account</button>
+        <button onclick="login();">Login</button>
+
     </div>
+    <script src="lib.js"></script>
+    
 </body>
 </html>

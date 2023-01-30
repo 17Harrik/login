@@ -1,5 +1,5 @@
 ﻿body {
-    background: #ffff66;
+    background: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -15,11 +15,11 @@ input {
 }
 
 button {
-    background: #ff00ff;
+    background: white;
 }
 
 button:hover {
-    box-shadow: #ff00ff 0 0 6px 6px;
+    box-shadow: black 0 0 0.5px 0.5px;
 }
 
 #logo {
@@ -29,4 +29,8 @@ button:hover {
     right: 1em;
     bottom: 1em;
     border: solid 2px white;
+}
+
+#hints {
+    padding: 1em;
 }
