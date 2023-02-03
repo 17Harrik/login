@@ -12,7 +12,7 @@
     <p>Welcome to Instachat</p>
     <p>Please give us as much of your information as possible</p>
 
-    <div class="login">
+    <form class="login" method="post" id="login">
         <div>
             <label for="username">
                 Username:
@@ -31,11 +31,11 @@
             Welcome to Instachat
         </div>
 
-        <button onclick="reset();">Reset password</button>
-        <button onclick="createUser();">Create an account</button>
-        <button onclick="login();">Login</button>
+        <input type="button" onclick="reset();" value="Reset password"/>
+        <input type="button" onclick="createUser()"; value="Create an account"/>
+        <input type="button" onclick="login();" value="Login"/>
 
-    </div>
+    </form>
     <script src="lib.js"></script>
     
 </body>

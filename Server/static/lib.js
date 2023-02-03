@@ -1,4 +1,5 @@
 const hints = document.getElementById("hints");
+const form = document.getElementById("login");
 function reset() {
     console.log("Reset");
 }
@@ -17,6 +18,7 @@ function login() {
 
         lengthCheck(password, 5, 10, "Please enter a password between 5 and 10 characters");
         hints.innerText = "Attempting login";
+        form.submit();
     } catch (e) {
         hints.innerText = e;
     }

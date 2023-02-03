@@ -14,11 +14,11 @@ input {
     margin: 2em;
 }
 
-button {
+input[type=button] {
     background: white;
 }
 
-button:hover {
+input[type=button]:hover {
     box-shadow: black 0 0 0.5px 0.5px;
 }
 
