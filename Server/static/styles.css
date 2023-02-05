@@ -23,7 +23,7 @@ input[type=button]:hover {
 }
 
 #logo {
-    width: 3em;
+    width: 10em;
     border-radius: 50%;
     position: absolute;
     right: 1em;

@@ -8,22 +8,33 @@
 </head>
 <body>
     <h1>Login to Instachat</h1>
-    <img id="logo" src="https://i.pinimg.com/originals/d9/cc/e8/d9cce8e37b70ff92d212a1bc7a9137d5.png" />
     <p>Welcome to Instachat</p>
     <p>Please give us as much of your information as possible</p>
+    
+    <img id="logo" src="https://i.pinimg.com/originals/d9/cc/e8/d9cce8e37b70ff92d212a1bc7a9137d5.png" />
+    <script>
+        let counter = 0;
+        document.getElementById("logo").addEventListener("click", function () {
+            counter++;
+            if (counter === 50) {
+                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            }
+        });
+    </script>
 
     <form class="login" method="post" id="login">
+
         <div>
             <label for="username">
                 Username:
-                <input type="text" name="username"  id="username"/>
+                <input type="text" name="username" id="username" />
             </label>
         </div>
 
         <div>
             <label for="password">
                 Password:
-                <input type="password" name="password" id="password"/>
+                <input type="password" name="password" id="password" />
             </label>
         </div>
 
@@ -31,12 +42,12 @@
             Welcome to Instachat
         </div>
 
-        <input type="button" onclick="reset();" value="Reset password"/>
-        <input type="button" onclick="createUser()"; value="Create an account"/>
-        <input type="button" onclick="login();" value="Login"/>
+        <input type="button" onclick="reset();" value="Reset password" />
+        <input type="button" onclick="createUser()" ; value="Create an account" />
+        <input type="button" onclick="login();" value="Login" />
 
     </form>
     <script src="lib.js"></script>
-    
+
 </body>
 </html>
